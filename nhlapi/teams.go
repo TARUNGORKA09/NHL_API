@@ -1,4 +1,4 @@
-package nhlapi
+package Nhlapi
 import (
 	"net/http"
 	"encoding/json"
