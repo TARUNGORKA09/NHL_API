@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/TARUNGORKA09/NHL_API/tree/master/nhlapi"
+	"github.com/TARUNGORKA09/NHL_API/nhlapi"
 )
 
 func main() {
@@ -22,7 +22,7 @@ func main() {
 
 	log.SetOutput(wrt)
 
-	teams, err := nhlApi.GetAllTeams()
+	teams, err := nhlapi.GetAllTeams()
 	if err != nil {
 		log.Fatalf("error while getting all teams: %v", err)
 	}

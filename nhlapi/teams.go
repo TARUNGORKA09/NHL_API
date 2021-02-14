@@ -2,6 +2,7 @@ package nhlapi
 import (
 	"net/http"
 	"encoding/json"
+	"fmt"
 )
 
 type Team struct {
@@ -47,8 +48,8 @@ type nhlTeamsResponse struct {
 	Teams []Team `json:"teams"`
 }
 
-func GetAllTeams() []Team,error{
-	res, err := http.Get(fmt.Sprintf(format: "%s/teams",baseURL))
+func GetAllTeams() ([]Team,error){
+	res, err := http.Get(fmt.Sprintf("%s/teams",baseURL))
 	if err != nil {
 		return nil,err
 	}
