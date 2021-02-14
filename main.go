@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"https://github.com/TARUNGORKA09/NHL_API/tree/master/nhlapi"
+	"github.com/TARUNGORKA09/NHL_API/tree/master/nhlapi/nhlApi"
 )
 
 func main() {
